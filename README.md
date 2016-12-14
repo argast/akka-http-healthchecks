@@ -1,4 +1,4 @@
-# Simple healthcheck library for akka-http [![Build Status](https://travis-ci.org/timeoutdigital/akka-http-healthchecks.svg?branch=master)](https://travis-ci.org/argast/akka-http-healthchecks)
+# Simple healthcheck library for akka-http [![Build Status](https://travis-ci.org/argast/akka-http-healthchecks.svg?branch=master)](https://travis-ci.org/argast/akka-http-healthchecks)
 
 This library contains a simple health check implementation with corresponding route for akka http.
  
