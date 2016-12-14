@@ -1,5 +1,5 @@
 name := "akka-http-healthchecks"
-scalaVersion := "2.12.0"
+scalaVersion := "2.12.1"
 organization := "com.timeout"
 licenses += ("MIT", url("https://opensource.org/licenses/MIT"))
 credentials += Credentials(Path.userHome / ".bintray" / ".credentials")
@@ -9,7 +9,7 @@ val akkaVersion = "2.4.14"
 val akkaHttpVersion = "10.0.0"
 val catsVersion = "0.8.1"
 
-crossScalaVersions := Seq("2.11.8", "2.12.0")
+crossScalaVersions := Seq("2.11.8", "2.12.1")
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
@@ -32,7 +32,7 @@ lazy val root = (project in file("."))
     .enablePlugins(GitVersioning)
   .settings(BintrayPlugin.bintrayPublishSettings: _*)
   .settings(Seq(
-    bintrayOrganization := Some("timeoutdigital"),
-    bintrayRepository := "releases",
+    bintrayOrganization := Some("argast"),
+    bintrayRepository := "maven",
     git.useGitDescribe := true
   ))
